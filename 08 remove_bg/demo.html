@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Remove Background</title>
+    </head>
+    <body>
+        <h4>ENTER CORRECT API.</h1>
+        <h4>DO NOT LEAVE ANY FIELD EMPTY.</h4>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <label for="api">Enter Your remove.bg API:-- </label>
+            <input type="text" name="api" id="api" placeholder="enter your api">
+            <br>
+            <br>
+            <label for="image">Upload Image(MAX. 12 MB):-- </label>
+            <input type="file" name="image" id="image" />
+            <br>
+            <br><button type="submit">Submit</button>
+        </form>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="delup">Click here to delete all the store image from upload folder in server:-- </label>
+            <button type="submit" id="delup">DELETE UPLOAD IMAGE</button>
+        </form>
+        <form action="/download" method="post" enctype="multipart/form-data">
+            <label for="deldow">Click here to delete all the store image from delete folder in server:-- </label>
+            <button type="submit" id="deldow">DELETE DOWNLOAD IMAGE</button>
+        </form>
+    </body>
+    <script>
+    </script>
+</html>

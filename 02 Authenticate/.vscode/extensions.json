@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "EditorConfig.EditorConfig",
+    "CoenraadS.bracket-pair-colorizer",
+    "christian-kohler.path-intellisense",
+    "esbenp.prettier-vscode",
+    "vscode-icons-team.vscode-icons",
+    "mikestead.dotenv"
+  ]
+}
