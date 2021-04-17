@@ -3,7 +3,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const mongoose = require("mongoose");
-const encrypt = require("mongoose-encryption");
+require("dotenv").config();
 
 const app = express();
 
@@ -71,16 +71,13 @@ app.post("/login", (req, res) => {
     }
 });
 
-mongoose.connect("mongodb+srv://test:test@cluster0.gfcm8.mongodb.net/authenticationDB?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(process.env.db_url, { useNewUrlParser: true, useUnifiedTopology: true});
 
 const userSchema = new mongoose.Schema({
     email: String,
     password: String,
 }); 
 
-const secret = "thisisourlittlesecret";
-
-userSchema.plugin(encrypt, { secret: secret, encryptedFields: ['password'] });
 
 const User = new mongoose.model("User", userSchema);
 
