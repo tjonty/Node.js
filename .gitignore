@@ -1,22 +1,11 @@
-01 CRUD/.env
-01 CRUD/node_modules
-02 Authenticate/.env
-02 Authenticate/node_modules
-03 Passport authenticate/.env
-03 Passport authenticate/node_modules
-04 Movielist
-05 file-upload/.env
-05 file-upload/node_modules
-06 Excel-to-Json/node_modules
-06 Excel-to-Json/diabetes.csv
-06 Excel-to-Json/excel_sheet.xlsx
-06 Excel-to-Json/metabolic.csv
-06 Excel-to-Json/Wockhardt Field list Webapp.xlsx
-07 auth-session/.env
-07 auth-session/node_modules
-08 remove_bg/.env
-08 remove_bg/node_modules
-08 remove_bg/node_modules
-08 remove_bg/public/download
-08 remove_bg/public/image
-08 remove_bg/.env
+*/*.xlsx
+*/*.csv
+*/.env
+*/node_modules
+*/public/image
+*/public/download
+boilerplate
+Movielist
+auth-session
+basic_chat_app_socketio
+passport-google
