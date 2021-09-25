@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <style>
+            .container{
+                background-color: lightgrey;
+                margin: 10%;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+
+            <form class="container" action="/demo" method="POST">
+                <input type="text" name="name" placeholder="Enter Your Name">
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+            <hr>
+            <form class="container" action="/upload" method="POST"  enctype="multipart/form-data">
+                <input type="file" name="image">
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        </body>
+    </html>

@@ -1,0 +1,12 @@
+MongoDB == NO-SQL
+No-sql !== SQL
+sql = "Structured" Query Language; relational; 
+
+sql = table based;
+nosql = documents; 
+
+MongoDB creates schemaless documents which can store any information you want; 
+though it may cause problems with data consistency.
+
+MySQL creates a strict schema-template, 
+and hence it is bound to make mistakes.

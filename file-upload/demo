@@ -1,0 +1,29 @@
+let studeny = {
+    "first name" : "jonty",
+    "age" : 20,
+    "hobby" : ["ser"],
+    "_id" : "dvh2348"
+},
+{
+    "first name" : "rk",
+    "age" : 19,
+    "hobby" : ["ser"],
+    "_id" : "dvh2348sfvn",
+}
+
+let teacher = {
+    "name" : "DPD"
+    _id: "skjl",
+    students: [
+        "dvh2348sfvn",
+        "sdnfisksnf23894"
+    ]
+}
+
+items = ["segfv", "fsf"]
+db.account.updateMany(
+    { _id: { $in : items }},
+    { $set: { 
+        "bill_no" : 98746213,
+    } }
+)
